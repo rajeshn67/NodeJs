@@ -4,6 +4,4 @@ function calculate(a,b){
     const sum = a+b;
     console.log(sum);
 }
-module.exports = {calculate:calculate
-     , x:x
-}; //exporting the function calculate
+module.exports = {calculate, x}; //exporting the function calculate
