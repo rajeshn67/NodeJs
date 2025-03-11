@@ -41,6 +41,10 @@ const data = {
     const count = await collection.countDocuments({});
     console.log('count of documents:', count);
 
+    //find all document with firstname sanket
+    const query = await collection.find({firstname: 'sanket'}).toArray();
+    console.log('query:', query);
+
     return 'done.';
   }
   main()
